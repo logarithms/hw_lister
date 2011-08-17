@@ -1,0 +1,17 @@
+#!/usr/bin/env ruby
+
+require 'hardware'
+require 'hardware/components'
+
+if $0 =~ /hw\-(.+)$/
+    component_name = $1
+    attribute = ARGV[0]
+    if Hardware::Components.list.include?(component_name)
+        p Hardware::Components.run component_name, attribute
+    else
+        STDERR.puts "Cannot find the #{component_name} command in the Components plugin directory"
+    end
+else
+    STDERR.puts "Do not know which command to run, please run hw help for details"
+end
+

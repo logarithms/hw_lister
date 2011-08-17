@@ -1,0 +1,5 @@
+export HWDir=$HOME/rails/hw_lister
+
+export HWComponentsDir=$HWDir/lib/components
+export RUBYLIB=$HWDir/lib/ruby/:$RUBYLIB
+export PATH=$HWDir:$PATH

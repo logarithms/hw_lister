@@ -1,0 +1,16 @@
+2011-08-17 20:47:26 root@tm-ndes-rnm01:~> ./hw-cpu model
+"Intel(R) Xeon(R) CPU X5570 @ 2.93GHz"
+2011-08-17 20:47:33 root@tm-ndes-rnm01:~> ./hw-cpu count
+8
+2011-08-17 20:47:41 root@tm-ndes-rnm01:~> ./hw-cpu capacity
+nil
+2011-08-17 20:47:45 root@tm-ndes-rnm01:~> ./hw-cpu capacities
+/root/lib/ruby/hardware/components.rb:10:in `send': undefined method `capacities' for #<Cpu:0x7f21e30c7ea0> (NoMethodError)
+        from /root/lib/ruby/hardware/components.rb:10:in `run'
+        from ./hw-cpu:10
+2011-08-17 20:47:55 root@tm-ndes-rnm01:~> ./hw-cpus capacities
+-bash: ./hw-cpus: No such file or directory
+2011-08-17 20:48:02 root@tm-ndes-rnm01:~> ./hw-cpu capacities
+2011-08-17 20:48:12 root@tm-ndes-rnm01:~> ln -s hw hw-mobo
+2011-08-17 20:48:20 root@tm-ndes-rnm01:~> ./hw-mobo
+Cannot find the mobo command in the Components plugin directory

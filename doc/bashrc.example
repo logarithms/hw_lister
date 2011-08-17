@@ -1,0 +1,5 @@
+[[ -f ~/.hardware_env ]] && . ~/.hardware_env
+
+OR
+
+[[ -f ~/hw_lister/.hardware_env ]] && . ~/hw_lister/.hardware_env

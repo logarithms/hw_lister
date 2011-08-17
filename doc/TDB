@@ -1,0 +1,18 @@
+env | grep RUBY
+cat /proc/cpuinfo
+echo $HOME
+
+mkdir ~/rails/hw
+cd ~/rails/hw
+ln -svnf "$(pwd)/lib" ~/lib
+sftp -P 443 rsingh-t@op-stes-ssh01
+tar zxvf hw.tgz 
+
+
+ln -s hw hw-cpu
+vi .hardware_env 
+. ./.hardware_env 
+
+./hw-cpu count
+
+#vi lib/ruby/hardware.rb 

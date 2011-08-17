@@ -1,0 +1,14 @@
+# some tests that should pass
+cat /proc/cpuinfo
+
+env | grep RUBY
+echo $HOME
+
+#
+mkdir ~/rails/hw
+cd ~/rails/hw
+tar zxvf hw.tgz 
+
+ln -svnf "$(pwd)/lib" ~/lib
+vi .hardware_env 
+. ./.hardware_env 
